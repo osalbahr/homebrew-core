@@ -1,8 +1,8 @@
 class Autopsy < Formula
   desc "Graphical interface to Sleuth Kit investigation tools"
   homepage "https://www.sleuthkit.org/autopsy/index.php"
-  url "https://downloads.sourceforge.net/project/autopsy/autopsy/2.24/autopsy-2.24.tar.gz"
-  sha256 "ab787f519942783d43a561d12be0554587f11f22bc55ab79d34d8da703edc09e"
+  url "https://github.com/sleuthkit/autopsy/releases/download/autopsy-4.20.0/autopsy-4.20.0.zip"
+  sha256 "60964ab135429c2636ab8a1b0da5ee18d232d4323db6ede1b6a9cfbf7e3500ce"
 
   livecheck do
     url "https://github.com/sleuthkit/autopsy.git"
