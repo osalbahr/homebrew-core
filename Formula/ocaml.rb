@@ -19,11 +19,6 @@ class Ocaml < Formula
   stable do
     url "https://caml.inria.fr/pub/distrib/ocaml-5.0/ocaml-5.0.0.tar.gz"
     sha256 "969e1f7939736d39f2af533cd12cc64b05f060dbed087d7b760ee2503bfe56de"
-
-    # Remove use of -flat_namespace. Upstreamed at
-    # https://github.com/ocaml/ocaml/pull/10723
-    # We embed a patch here so we don't have to regenerate configure.
-    patch :DATA
   end
 
   livecheck do
@@ -46,12 +41,6 @@ class Ocaml < Formula
   # brew detection doesn't find, and so needs to be explicitly blocked.
   pour_bottle? only_if: :default_prefix
 
-  # Fix -flat_namespace being used on Big Sur and later.
-  patch do
-    url "https://raw.githubusercontent.com/Homebrew/formula-patches/03cf8088210822aa2c1ab544ed58ea04c897d9c4/libtool/configure-big_sur.diff"
-    sha256 "35acd6aebc19843f1a2b3a63e880baceb0f5278ab1ace661e57a502d9d78c93c"
-  end
-
   def install
     ENV.deparallelize # Builds are not parallel-safe, esp. with many cores
 
@@ -72,16 +61,3 @@ class Ocaml < Formula
     assert_match HOMEBREW_PREFIX.to_s, shell_output("#{bin}/ocamlc -where")
   end
 end
-
-__END__
---- a/configure
-+++ b/configure
-@@ -14087,7 +14087,7 @@ if test x"$enable_shared" != "xno"; then :
-   case $host in #(
-   *-apple-darwin*) :
-     mksharedlib="$CC -shared \
--                   -flat_namespace -undefined suppress -Wl,-no_compact_unwind \
-+                   -undefined dynamic_lookup -Wl,-no_compact_unwind \
-                    \$(LDFLAGS)"
-       supports_shared_libraries=true ;; #(
-   *-*-mingw32) :
