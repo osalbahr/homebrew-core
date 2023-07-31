@@ -17,8 +17,8 @@ class Ocaml < Formula
   head "https://github.com/ocaml/ocaml.git", branch: "trunk"
 
   stable do
-    url "https://caml.inria.fr/pub/distrib/ocaml-4.14/ocaml-4.14.0.tar.xz"
-    sha256 "36abd8cca53ff593d5e7cd8b98eee2f1f36bd49aaf6ff26dc4c4dd21d861ac2b"
+    url "https://caml.inria.fr/pub/distrib/ocaml-5.0/ocaml-5.0.0.tar.gz"
+    sha256 "969e1f7939736d39f2af533cd12cc64b05f060dbed087d7b760ee2503bfe56de"
 
     # Remove use of -flat_namespace. Upstreamed at
     # https://github.com/ocaml/ocaml/pull/10723
