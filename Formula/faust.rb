@@ -1,8 +1,8 @@
 class Faust < Formula
   desc "Functional programming language for real time signal processing"
   homepage "https://faust.grame.fr"
-  url "https://github.com/grame-cncm/faust/releases/download/2.54.9/faust-2.54.9.tar.gz"
-  sha256 "29cfb88f87fd93a55620c18f58ec585a31b6f8106a9fd3528db8340048adef28"
+  url "https://github.com/grame-cncm/faust/releases/download/2.60.3/faust-2.60.3.tar.gz"
+  sha256 "1088b31ad2a6175ff27807afc33c5929c33e97a7d09a1995e126bdda9940fc1e"
   license "GPL-2.0-or-later"
 
   bottle do
@@ -22,12 +22,6 @@ class Faust < Formula
   depends_on "llvm@14" # Needs LLVM 14 for `csound`.
 
   fails_with gcc: "5"
-
-  # upstream patch, https://github.com/grame-cncm/faust/pull/844
-  patch do
-    url "https://github.com/grame-cncm/faust/commit/ca013457c9d52bdc0101c9d31fc3621fe3e1b103.patch?full_index=1"
-    sha256 "e2f39b34d744cd79178e9e581f63af9076d04b3c01edc19799e2fe2d5ea18814"
-  end
 
   def install
     ENV.delete "TMP" # don't override Makefile variable
