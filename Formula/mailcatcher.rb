@@ -1,10 +1,9 @@
 class Mailcatcher < Formula
   desc "Catches mail and serves it through a dream"
   homepage "https://mailcatcher.me"
-  url "https://github.com/sj26/mailcatcher/archive/refs/tags/v0.8.2.tar.gz"
-  sha256 "3bf200ab3b2926d3747a462afd68dce5a28a11fe8d2834ce929c99c90d4192d3"
+  url "https://github.com/sj26/mailcatcher/archive/refs/tags/v0.9.0.tar.gz"
+  sha256 "6f6651035bf09357ca50cccf2ce4874e30e56563006219b8bf7b663e12ccaecf"
   license "MIT"
-  revision 2
 
   bottle do
     sha256                               arm64_ventura:  "7dc97b72f0a0b3dc1d7d802790d605843f5dddca526563b1423702ef95b9163a"
