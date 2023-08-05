@@ -1,8 +1,8 @@
 class Libnatpmp < Formula
   desc "NAT port mapping protocol library"
   homepage "http://miniupnp.free.fr/libnatpmp.html"
-  url "http://miniupnp.free.fr/files/download.php?file=libnatpmp-20230423.tar.gz"
-  sha256 "0684ed2c8406437e7519a1bd20ea83780db871b3a3a5d752311ba3e889dbfc70"
+  url "http://miniupnp.free.fr/files/download.php?file=libnatpmp-20230616.tar.gz"
+  sha256 "df378eb08edcc6a24504f4116baaa806d6274911ac2527a39f6e9ca8d1cccca2"
   license "BSD-3-Clause"
 
   livecheck do
