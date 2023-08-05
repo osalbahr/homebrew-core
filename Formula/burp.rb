@@ -2,11 +2,10 @@ class Burp < Formula
   desc "Network backup and restore"
   homepage "https://burp.grke.org/"
   license "AGPL-3.0-only" => { with: "openvpn-openssl-exception" }
-  revision 1
 
   stable do
-    url "https://github.com/grke/burp/releases/download/2.4.0/burp-2.4.0.tar.bz2"
-    sha256 "1f88d325f59c6191908d13ac764db5ee56b478fbea30244ae839383b9f9d2832"
+    url "https://github.com/grke/burp/releases/download/3.1.4/burp-3.1.4.tar.bz2"
+    sha256 "4bdcbde98082db78679a7a7170c76dff5dacb9f8b984aaa3f01d2999dac6e3f9"
 
     resource "uthash" do
       url "https://github.com/troydhanson/uthash/archive/refs/tags/v2.3.0.tar.gz"
