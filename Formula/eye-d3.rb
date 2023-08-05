@@ -3,11 +3,10 @@ class EyeD3 < Formula
 
   desc "Work with ID3 metadata in .mp3 files"
   homepage "https://eyed3.nicfit.net/"
-  url "https://eyed3.nicfit.net/releases/eyeD3-0.9.6.tar.gz"
-  mirror "https://files.pythonhosted.org/packages/fb/f2/27b42a10b5668df27ce87aa22407e5115af7fce9b1d68f09a6d26c3874ec/eyeD3-0.9.6.tar.gz"
-  sha256 "4b5064ec0fb3999294cca0020d4a27ffe4f29149e8292fdf7b2de9b9cabb7518"
+  url "https://eyed3.nicfit.net/releases/eyeD3-0.9.7.tar.gz"
+  mirror "https://files.pythonhosted.org/packages/fb/f2/27b42a10b5668df27ce87aa22407e5115af7fce9b1d68f09a6d26c3874ec/eyeD3-0.9.7.tar.gz"
+  sha256 "93b18e9393376a45114f9409d7cca119fb6f4f9a37d4b697b500af48b4c5cf0f"
   license "GPL-3.0-or-later"
-  revision 1
 
   livecheck do
     url "https://github.com/nicfit/eyeD3.git"
