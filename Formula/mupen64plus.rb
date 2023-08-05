@@ -1,10 +1,9 @@
 class Mupen64plus < Formula
   desc "Cross-platform plugin-based N64 emulator"
   homepage "https://www.mupen64plus.org/"
-  url "https://github.com/mupen64plus/mupen64plus-core/releases/download/2.5/mupen64plus-bundle-src-2.5.tar.gz"
-  sha256 "9c75b9d826f2d24666175f723a97369b3a6ee159b307f7cc876bbb4facdbba66"
+  url "https://github.com/mupen64plus/mupen64plus-core/releases/download/2.5.9/mupen64plus-bundle-src-2.5.9.tar.gz"
+  sha256 "d5243ddc00388ee2e538b3826a78a719dec2bd5da54ac6f3344fed861fb141a8"
   license "GPL-2.0-or-later"
-  revision 5
 
   livecheck do
     url :stable
