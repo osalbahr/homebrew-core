@@ -1,8 +1,8 @@
 class Linklint < Formula
   desc "Link checker and web site maintenance tool"
   homepage "http://linklint.org"
-  url "http://linklint.org/download/linklint-2.3.5.tar.gz"
-  sha256 "ecaee456a3c2d6a3bd18a580d6b09b6b7b825df3e59f900270fe3f84ec3ac9c7"
+  url "http://linklint.org/download/linklint-2.3.6.d.tar.gz"
+  sha256 "05c2aee1c530af566ef67857fc6b052abb3521d54318749375f8c4a092cd3dea"
 
   livecheck do
     url "http://linklint.org/download.html"
