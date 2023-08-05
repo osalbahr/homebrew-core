@@ -20,6 +20,7 @@ class Criterion < Formula
   depends_on "meson" => :build
   depends_on "ninja" => :build
   depends_on "pkg-config" => :build
+  depends_on "debugbreak"
   depends_on "libgit2"
   depends_on "nanomsg"
   uses_from_macos "libffi"
