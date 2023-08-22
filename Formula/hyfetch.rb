@@ -10,7 +10,7 @@ class Hyfetch < Formula
     depends_on "screenresolution"
   end
 
-  conflicts_with "neofetch", because: "conflicting name"
+  conflicts_with "neofetch", because: "both install `neofetch` binary"
 
   def install
     inreplace "neofetch", "/usr/local", HOMEBREW_PREFIX
