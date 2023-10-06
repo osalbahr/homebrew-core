@@ -43,8 +43,8 @@ class Podman < Formula
 
   resource "gvproxy" do
     on_macos do
-      url "https://github.com/containers/gvisor-tap-vsock/archive/refs/tags/v0.7.0.tar.gz"
-      sha256 "e526b8bf568a5145f4f265a8d450483be27c82717e60f4f22902589a78f68e1f"
+      url "https://github.com/containers/gvisor-tap-vsock/archive/refs/tags/v0.7.1.tar.gz"
+      sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     end
   end
 
