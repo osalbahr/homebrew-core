@@ -8,6 +8,10 @@ Core formulae for the Homebrew package manager.
 
 Just `brew install <formula>`. This is the default tap for Homebrew and is installed by default.
 
+## How do I locally `tap` homebrew-core?
+
+    brew tap --force homebrew/core
+
 ## More Documentation, Troubleshooting, Contributing, Security, Community, Donations, License and Sponsors
 
 See these sections in [Homebrew/brew's README](https://github.com/Homebrew/brew#homebrew).
