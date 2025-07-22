@@ -13,6 +13,16 @@ class Edit < Formula
   end
 
   test do
-    system bin/"edit", "--version"
+    PTY.spawn(bin/"edit", "test.txt") do |r, w, pid|
+      sleep 1
+      w.write "test data"
+      sleep 1
+      w.write "\u0013" # Ctrl+S
+      sleep 1
+      w.write "\u0011" # Ctrl+Q
+      sleep 1
+    end
+
+    assert_match "test data", (testpath/"test.txt").read
   end
 end
